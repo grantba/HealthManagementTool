@@ -14,6 +14,10 @@
 		991968592BC1F4BA00DFA535 /* HealthManagementToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991968582BC1F4BA00DFA535 /* HealthManagementToolTests.swift */; };
 		991968632BC1F4BA00DFA535 /* HealthManagementToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991968622BC1F4BA00DFA535 /* HealthManagementToolUITests.swift */; };
 		991968652BC1F4BA00DFA535 /* HealthManagementToolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991968642BC1F4BA00DFA535 /* HealthManagementToolUITestsLaunchTests.swift */; };
+		991968722BC1F62D00DFA535 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 991968712BC1F62D00DFA535 /* GoogleService-Info.plist */; };
+		991968752BC1F7DE00DFA535 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 991968742BC1F7DE00DFA535 /* FirebaseAnalytics */; };
+		991968772BC1F7DE00DFA535 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 991968762BC1F7DE00DFA535 /* FirebaseFirestore */; };
+		991968792BC1F7DE00DFA535 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 991968782BC1F7DE00DFA535 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,7 @@
 		9919685E2BC1F4BA00DFA535 /* HealthManagementToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthManagementToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		991968622BC1F4BA00DFA535 /* HealthManagementToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagementToolUITests.swift; sourceTree = "<group>"; };
 		991968642BC1F4BA00DFA535 /* HealthManagementToolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagementToolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		991968712BC1F62D00DFA535 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991968752BC1F7DE00DFA535 /* FirebaseAnalytics in Frameworks */,
+				991968772BC1F7DE00DFA535 /* FirebaseFirestore in Frameworks */,
+				991968792BC1F7DE00DFA535 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,7 @@
 			children = (
 				991968472BC1F4B800DFA535 /* HealthManagementToolApp.swift */,
 				991968492BC1F4B800DFA535 /* ContentView.swift */,
+				991968712BC1F62D00DFA535 /* GoogleService-Info.plist */,
 				9919684B2BC1F4BA00DFA535 /* Assets.xcassets */,
 				9919684D2BC1F4BA00DFA535 /* Preview Content */,
 			);
@@ -143,6 +152,11 @@
 			dependencies = (
 			);
 			name = HealthManagementTool;
+			packageProductDependencies = (
+				991968742BC1F7DE00DFA535 /* FirebaseAnalytics */,
+				991968762BC1F7DE00DFA535 /* FirebaseFirestore */,
+				991968782BC1F7DE00DFA535 /* FirebaseFirestoreSwift */,
+			);
 			productName = HealthManagementTool;
 			productReference = 991968442BC1F4B800DFA535 /* HealthManagementTool.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 9919683B2BC1F4B800DFA535;
+			packageReferences = (
+				991968732BC1F7DE00DFA535 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 991968452BC1F4B800DFA535 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +250,7 @@
 			files = (
 				9919684F2BC1F4BA00DFA535 /* Preview Assets.xcassets in Resources */,
 				9919684C2BC1F4BA00DFA535 /* Assets.xcassets in Resources */,
+				991968722BC1F62D00DFA535 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +606,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		991968732BC1F7DE00DFA535 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		991968742BC1F7DE00DFA535 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991968732BC1F7DE00DFA535 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		991968762BC1F7DE00DFA535 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991968732BC1F7DE00DFA535 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		991968782BC1F7DE00DFA535 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991968732BC1F7DE00DFA535 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9919683C2BC1F4B800DFA535 /* Project object */;
 }
