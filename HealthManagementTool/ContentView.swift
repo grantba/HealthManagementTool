@@ -67,7 +67,8 @@ struct ContentView: View {
                     login()
                 }
                     label: {
-                        Text("Already have an account?\nLogin")
+                        Text("Already have an account? Login")
+                            .underline()
                             .bold()
                             .frame(width: 300, height: 60)
                             .foregroundColor(.white)
