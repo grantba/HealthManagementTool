@@ -111,10 +111,10 @@
 				991968472BC1F4B800DFA535 /* HealthManagementToolApp.swift */,
 				991968492BC1F4B800DFA535 /* ContentView.swift */,
 				99AF23682BCC7483002CEBE3 /* ListView.swift */,
+				99AF23662BCC5C5A002CEBE3 /* AuthManager.swift */,
 				991968712BC1F62D00DFA535 /* GoogleService-Info.plist */,
 				9919684B2BC1F4BA00DFA535 /* Assets.xcassets */,
 				9919684D2BC1F4BA00DFA535 /* Preview Content */,
-				99AF23662BCC5C5A002CEBE3 /* AuthManager.swift */,
 			);
 			path = HealthManagementTool;
 			sourceTree = "<group>";

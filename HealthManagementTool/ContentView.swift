@@ -9,11 +9,12 @@ import SwiftUI
 import Firebase
 
 struct ContentView: View {
+//    @EnvironmentObject var authManager: AuthManager
     @State private var email = ""
     @State private var password = ""
     @State private var userIsLoggedIn = false
-    @State private var showAlert = false
-    @State private var errorMessage = "Unknown error: Please try again"
+    @State var showAlert = false
+    @State var errorMessage = "Unknown error: Please try again"
 
     var body: some View {
         if userIsLoggedIn {
@@ -49,6 +50,11 @@ struct ContentView: View {
                     .textFieldStyle(.roundedBorder)
                     .padding([.leading, .trailing, .bottom], 30)
                 Button {
+//                    let message = authManager.signup(email: email, password: password) 
+//                    if (message != "") {
+//                        showAlert = true
+//                        errorMessage = message 
+//                    }
                     signup()
                 }
                     label: {
@@ -64,6 +70,11 @@ struct ContentView: View {
                         Text("\(errorMessage) \("Please try again.")")
                     }
                 Button {
+//                    let message = authManager.login(email: email, password: password) 
+//                    if (message != "") {
+//                        showAlert = true
+//                        errorMessage = message 
+//                    }
                     login()
                 }
                     label: {

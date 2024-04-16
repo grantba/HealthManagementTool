@@ -9,17 +9,22 @@ import SwiftUI
 import Firebase
 
 struct ListView: View {
+//    @EnvironmentObject var authManager: AuthManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        Button {
-            logout()
-        }
-    label: {
-        Text("Logout")
-            .bold()
-            .frame(width: 300, height: 40)
-            .foregroundColor(.black)
-        }
+            Text("View Medications")
+            Text("Add Medications")
+            Text("View Physicians")
+            Text("Add Physician")
+            Button {
+                logout()
+            }
+            label: {
+                Text("Logout")
+                    .bold()
+                    .frame(width: 300, height: 40)
+                    .foregroundColor(.black)
+            }
     }
     
     func logout() {
