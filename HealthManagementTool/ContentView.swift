@@ -90,6 +90,8 @@ struct ContentView: View {
                         Text("\(errorMessage) \("Please try again.")")
                     }
                 .onAppear {
+                    email = ""
+                    password = ""
                     Auth.auth().addStateDidChangeListener { auth, user in
                         if user != nil {
                             isLoggedIn.toggle()
