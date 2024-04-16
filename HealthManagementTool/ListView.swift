@@ -10,14 +10,18 @@ import Firebase
 
 struct ListView: View {
 //    @EnvironmentObject var authManager: AuthManager
-    
+    @Binding var isLoggedIn: Bool
+
     var body: some View {
             Text("View Medications")
             Text("Add Medications")
             Text("View Physicians")
             Text("Add Physician")
-            Button {
+        Button {
                 logout()
+                if Auth.auth().currentUser == nil {
+                    isLoggedIn = false
+                }
             }
             label: {
                 Text("Logout")
@@ -36,6 +40,6 @@ struct ListView: View {
     }
 }
 
-#Preview {
-    ListView()
-}
+//#Preview {
+//    ListView(isLoggedIn: isLoggedIn)
+//}

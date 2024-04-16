@@ -10,15 +10,15 @@ import Firebase
 
 struct ContentView: View {
 //    @EnvironmentObject var authManager: AuthManager
+    @State var isLoggedIn: Bool = false
     @State private var email = ""
     @State private var password = ""
-    @State private var userIsLoggedIn = false
     @State var showAlert = false
     @State var errorMessage = "Unknown error: Please try again"
 
     var body: some View {
-        if userIsLoggedIn {
-            ListView()
+        if isLoggedIn {
+            ListView(isLoggedIn: $isLoggedIn)
         } else {
             onPageLoadView
         }
@@ -92,7 +92,7 @@ struct ContentView: View {
                 .onAppear {
                     Auth.auth().addStateDidChangeListener { auth, user in
                         if user != nil {
-                            userIsLoggedIn.toggle()
+                            isLoggedIn.toggle()
                         }
                     }
                 }
