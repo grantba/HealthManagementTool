@@ -18,11 +18,16 @@ struct ListView: View {
             Text("View Physicians")
             Text("Add Physician")
         Button {
-                logout()
-                if Auth.auth().currentUser == nil {
-                    isLoggedIn = false
+            logout()
+            if Auth.auth().currentUser == nil {
+                isLoggedIn = false
+            }
+            Auth.auth().addStateDidChangeListener { auth, user in
+                if user != nil {
+                    isLoggedIn.toggle()
                 }
             }
+        }
             label: {
                 Text("Logout")
                     .bold()

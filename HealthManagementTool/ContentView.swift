@@ -50,12 +50,17 @@ struct ContentView: View {
                     .textFieldStyle(.roundedBorder)
                     .padding([.leading, .trailing, .bottom], 30)
                 Button {
-//                    let message = authManager.signup(email: email, password: password) 
-//                    if (message != "") {
-//                        showAlert = true
-//                        errorMessage = message 
-//                    }
+                    //                    let message = authManager.signup(email: email, password: password)
+                    //                    if (message != "") {
+                    //                        showAlert = true
+                    //                        errorMessage = message
+                    //                    }
                     signup()
+                    Auth.auth().addStateDidChangeListener { auth, user in
+                        if user != nil {
+                            isLoggedIn.toggle()
+                        }
+                    }
                 }
                     label: {
                         Text("Sign up")
@@ -70,12 +75,17 @@ struct ContentView: View {
                         Text("\(errorMessage) \("Please try again.")")
                     }
                 Button {
-//                    let message = authManager.login(email: email, password: password) 
-//                    if (message != "") {
-//                        showAlert = true
-//                        errorMessage = message 
-//                    }
+                    //                    let message = authManager.login(email: email, password: password)
+                    //                    if (message != "") {
+                    //                        showAlert = true
+                    //                        errorMessage = message
+                    //                    }
                     login()
+                    Auth.auth().addStateDidChangeListener { auth, user in
+                        if user != nil {
+                            isLoggedIn.toggle()
+                        }
+                    }
                 }
                     label: {
                         Text("Already have an account? Login")
@@ -92,11 +102,6 @@ struct ContentView: View {
                 .onAppear {
                     email = ""
                     password = ""
-                    Auth.auth().addStateDidChangeListener { auth, user in
-                        if user != nil {
-                            isLoggedIn.toggle()
-                        }
-                    }
                 }
             }
             .padding()
