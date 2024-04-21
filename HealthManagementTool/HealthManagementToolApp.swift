@@ -23,9 +23,11 @@ struct HealthManagementToolApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @StateObject var authManager = AuthManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(authManager)
         }
     }
 }

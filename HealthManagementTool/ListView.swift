@@ -9,42 +9,40 @@ import SwiftUI
 import Firebase
 
 struct ListView: View {
-//    @EnvironmentObject var authManager: AuthManager
-    @Binding var isLoggedIn: Bool
-
+    @EnvironmentObject var authManager: AuthManager
+    //@Binding var isLoggedIn: Bool
+    
     var body: some View {
-            Text("View Medications")
-            Text("Add Medications")
-            Text("View Physicians")
-            Text("Add Physician")
-        Button {
-            logout()
-            if Auth.auth().currentUser == nil {
-                isLoggedIn = false
-            }
-            Auth.auth().addStateDidChangeListener { auth, user in
-                if user != nil {
-                    isLoggedIn.toggle()
+        Text("Welcome, UserName!")
+        NavigationStack {
+            VStack {
+                NavigationLink(destination: MedicationsView()) {
+                    Text("View Medications")
+                }
+                NavigationLink(destination: AddMedicationView()) {
+                    Text("Add Medication")
+                }
+                NavigationLink(destination: PhysiciansView()) {
+                    Text("View Physicians")
+                }
+                NavigationLink(destination: AddPhysicianView()) {
+                    Text("Add Physician")
                 }
             }
-        }
-            label: {
-                Text("Logout")
-                    .bold()
-                    .frame(width: 300, height: 40)
-                    .foregroundColor(.black)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Logout") {
+                        authManager.logout()
+                    }
+                }
             }
-    }
-    
-    func logout() {
-        do {
-            try Auth.auth().signOut()
-        } catch let signOutError as NSError {
-            print("Error signing out: %@", signOutError)
+            .navigationBarTitleDisplayMode(.inline)
+            .padding()
+            .navigationTitle("HomePage")
         }
     }
 }
 
-//#Preview {
-//    ListView(isLoggedIn: isLoggedIn)
-//}
+#Preview {
+    ListView()
+}

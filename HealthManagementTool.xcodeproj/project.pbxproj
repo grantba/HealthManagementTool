@@ -21,6 +21,11 @@
 		99AF23652BCC58FE002CEBE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 99AF23642BCC58FE002CEBE3 /* FirebaseAuth */; };
 		99AF23672BCC5C5A002CEBE3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF23662BCC5C5A002CEBE3 /* AuthManager.swift */; };
 		99AF23692BCC7483002CEBE3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF23682BCC7483002CEBE3 /* ListView.swift */; };
+		99B0C5E32BD4823A003DBFCE /* PageLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5E22BD4823A003DBFCE /* PageLoadView.swift */; };
+		99B0C5E52BD48686003DBFCE /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5E42BD48686003DBFCE /* MedicationsView.swift */; };
+		99B0C5E72BD486AC003DBFCE /* AddMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5E62BD486AC003DBFCE /* AddMedicationView.swift */; };
+		99B0C5E92BD486D9003DBFCE /* PhysiciansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5E82BD486D9003DBFCE /* PhysiciansView.swift */; };
+		99B0C5EB2BD486EB003DBFCE /* AddPhysicianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5EA2BD486EB003DBFCE /* AddPhysicianView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		99AC87F32BCF380500EF6DFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99AF23662BCC5C5A002CEBE3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		99AF23682BCC7483002CEBE3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		99B0C5E22BD4823A003DBFCE /* PageLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageLoadView.swift; sourceTree = "<group>"; };
+		99B0C5E42BD48686003DBFCE /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
+		99B0C5E62BD486AC003DBFCE /* AddMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationView.swift; sourceTree = "<group>"; };
+		99B0C5E82BD486D9003DBFCE /* PhysiciansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysiciansView.swift; sourceTree = "<group>"; };
+		99B0C5EA2BD486EB003DBFCE /* AddPhysicianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhysicianView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				991968472BC1F4B800DFA535 /* HealthManagementToolApp.swift */,
-				991968492BC1F4B800DFA535 /* ContentView.swift */,
-				99AF23682BCC7483002CEBE3 /* ListView.swift */,
 				99AF23662BCC5C5A002CEBE3 /* AuthManager.swift */,
+				991968492BC1F4B800DFA535 /* ContentView.swift */,
+				99B0C5E22BD4823A003DBFCE /* PageLoadView.swift */,
+				99AF23682BCC7483002CEBE3 /* ListView.swift */,
+				99B0C5E42BD48686003DBFCE /* MedicationsView.swift */,
+				99B0C5E62BD486AC003DBFCE /* AddMedicationView.swift */,
+				99B0C5E82BD486D9003DBFCE /* PhysiciansView.swift */,
+				99B0C5EA2BD486EB003DBFCE /* AddPhysicianView.swift */,
 				99AC87F32BCF380500EF6DFB /* GoogleService-Info.plist */,
 				9919684B2BC1F4BA00DFA535 /* Assets.xcassets */,
 				9919684D2BC1F4BA00DFA535 /* Preview Content */,
@@ -287,7 +302,12 @@
 				99AF23692BCC7483002CEBE3 /* ListView.swift in Sources */,
 				9919684A2BC1F4B800DFA535 /* ContentView.swift in Sources */,
 				99AF23672BCC5C5A002CEBE3 /* AuthManager.swift in Sources */,
+				99B0C5EB2BD486EB003DBFCE /* AddPhysicianView.swift in Sources */,
+				99B0C5E52BD48686003DBFCE /* MedicationsView.swift in Sources */,
+				99B0C5E72BD486AC003DBFCE /* AddMedicationView.swift in Sources */,
+				99B0C5E92BD486D9003DBFCE /* PhysiciansView.swift in Sources */,
 				991968482BC1F4B800DFA535 /* HealthManagementToolApp.swift in Sources */,
+				99B0C5E32BD4823A003DBFCE /* PageLoadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
