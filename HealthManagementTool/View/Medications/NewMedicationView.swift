@@ -118,7 +118,7 @@ struct NewMedicationView: View {
                     medication.userId = ""
                 }
             label: {
-                Label("Add \(medication.name)", systemImage: "plus").font(.system(size: 18))
+                Label("Add", systemImage: "plus").font(.system(size: 18))
             }
                 //                .alert("", isPresented: $medications.showAlert) {
                 //                    Button("OK", role: .cancel) { }
@@ -163,11 +163,6 @@ struct NewMedicationView: View {
         }
     }
 }
-
-//#Preview {
-    //MedicationDetails()
-//}
-
 
 //#Preview {
     //NewMedicationView()

@@ -53,7 +53,7 @@ struct MedicationsView: View {
                 Button {
                 // add medication
                 } label: {
-                    Label("Add", systemImage: "plus").font(.system(size: 18))
+                    Label("Add Medication", systemImage: "plus").font(.system(size: 18))
                 }
             }
         }

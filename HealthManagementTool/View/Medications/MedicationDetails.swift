@@ -167,7 +167,7 @@ struct MedicationDetails: View {
                     medication.userId = ""
                 }
             label: {
-                Label("Delete medication", systemImage: "trash").foregroundColor(.red).font(.system(size: 18))
+                Label("Delete", systemImage: "trash").foregroundColor(.red).font(.system(size: 18))
             }
                 //                .alert("", isPresented: $medications.showAlert) {
                 //                    Button("OK", role: .cancel) { }
