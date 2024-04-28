@@ -17,7 +17,7 @@
 		991968752BC1F7DE00DFA535 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 991968742BC1F7DE00DFA535 /* FirebaseAnalytics */; };
 		991968772BC1F7DE00DFA535 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 991968762BC1F7DE00DFA535 /* FirebaseFirestore */; };
 		991968792BC1F7DE00DFA535 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 991968782BC1F7DE00DFA535 /* FirebaseFirestoreSwift */; };
-		99A9CE6B2BD5B49200345FEB /* BloodSugarLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE6A2BD5B49200345FEB /* BloodSugarLogView.swift */; };
+		99A9CE6B2BD5B49200345FEB /* BloodSugarReadingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE6A2BD5B49200345FEB /* BloodSugarReadingsView.swift */; };
 		99A9CE6F2BD5B97200345FEB /* MedicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE6E2BD5B97200345FEB /* MedicationViewModel.swift */; };
 		99A9CE712BD5BC7500345FEB /* MedicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE702BD5BC7500345FEB /* MedicationModel.swift */; };
 		99A9CE732BD7449600345FEB /* MedicationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE722BD7449600345FEB /* MedicationDetails.swift */; };
@@ -37,6 +37,12 @@
 		99A9CE9B2BDEA8BF00345FEB /* BloodSugarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE9A2BDEA8BF00345FEB /* BloodSugarModel.swift */; };
 		99A9CE9D2BDEA8CF00345FEB /* BloodPressureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE9C2BDEA8CF00345FEB /* BloodPressureViewModel.swift */; };
 		99A9CE9F2BDEA8E500345FEB /* BloodSugarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CE9E2BDEA8E500345FEB /* BloodSugarViewModel.swift */; };
+		99A9CEA12BDEB53400345FEB /* BloodSugarReadingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CEA02BDEB53300345FEB /* BloodSugarReadingDetails.swift */; };
+		99A9CEA32BDEB55500345FEB /* NewBloodSugarReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CEA22BDEB55500345FEB /* NewBloodSugarReadingView.swift */; };
+		99A9CEA52BDEB56700345FEB /* EditBloodSugarReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CEA42BDEB56700345FEB /* EditBloodSugarReadingView.swift */; };
+		99A9CEA72BDEB57D00345FEB /* BloodPressureReadingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CEA62BDEB57D00345FEB /* BloodPressureReadingDetails.swift */; };
+		99A9CEA92BDEB58F00345FEB /* NewBloodPressureReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CEA82BDEB58F00345FEB /* NewBloodPressureReadingView.swift */; };
+		99A9CEAB2BDEB59E00345FEB /* EditBloodPressureReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CEAA2BDEB59E00345FEB /* EditBloodPressureReadingView.swift */; };
 		99AC87F42BCF380500EF6DFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99AC87F32BCF380500EF6DFB /* GoogleService-Info.plist */; };
 		99AF23652BCC58FE002CEBE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 99AF23642BCC58FE002CEBE3 /* FirebaseAuth */; };
 		99AF23672BCC5C5A002CEBE3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF23662BCC5C5A002CEBE3 /* AuthManager.swift */; };
@@ -45,7 +51,7 @@
 		99B0C5E52BD48686003DBFCE /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5E42BD48686003DBFCE /* MedicationsView.swift */; };
 		99B0C5E72BD486AC003DBFCE /* PharmaciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5E62BD486AC003DBFCE /* PharmaciesView.swift */; };
 		99B0C5E92BD486D9003DBFCE /* PhysiciansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5E82BD486D9003DBFCE /* PhysiciansView.swift */; };
-		99B0C5EB2BD486EB003DBFCE /* BloodPresureLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5EA2BD486EB003DBFCE /* BloodPresureLogView.swift */; };
+		99B0C5EB2BD486EB003DBFCE /* BloodPressureReadingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0C5EA2BD486EB003DBFCE /* BloodPressureReadingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +82,7 @@
 		9919685E2BC1F4BA00DFA535 /* HealthManagementToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthManagementToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		991968622BC1F4BA00DFA535 /* HealthManagementToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagementToolUITests.swift; sourceTree = "<group>"; };
 		991968642BC1F4BA00DFA535 /* HealthManagementToolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManagementToolUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		99A9CE6A2BD5B49200345FEB /* BloodSugarLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarLogView.swift; sourceTree = "<group>"; };
+		99A9CE6A2BD5B49200345FEB /* BloodSugarReadingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarReadingsView.swift; sourceTree = "<group>"; };
 		99A9CE6E2BD5B97200345FEB /* MedicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationViewModel.swift; sourceTree = "<group>"; };
 		99A9CE702BD5BC7500345FEB /* MedicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationModel.swift; sourceTree = "<group>"; };
 		99A9CE722BD7449600345FEB /* MedicationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDetails.swift; sourceTree = "<group>"; };
@@ -96,6 +102,12 @@
 		99A9CE9A2BDEA8BF00345FEB /* BloodSugarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarModel.swift; sourceTree = "<group>"; };
 		99A9CE9C2BDEA8CF00345FEB /* BloodPressureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureViewModel.swift; sourceTree = "<group>"; };
 		99A9CE9E2BDEA8E500345FEB /* BloodSugarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarViewModel.swift; sourceTree = "<group>"; };
+		99A9CEA02BDEB53300345FEB /* BloodSugarReadingDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarReadingDetails.swift; sourceTree = "<group>"; };
+		99A9CEA22BDEB55500345FEB /* NewBloodSugarReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBloodSugarReadingView.swift; sourceTree = "<group>"; };
+		99A9CEA42BDEB56700345FEB /* EditBloodSugarReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBloodSugarReadingView.swift; sourceTree = "<group>"; };
+		99A9CEA62BDEB57D00345FEB /* BloodPressureReadingDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureReadingDetails.swift; sourceTree = "<group>"; };
+		99A9CEA82BDEB58F00345FEB /* NewBloodPressureReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBloodPressureReadingView.swift; sourceTree = "<group>"; };
+		99A9CEAA2BDEB59E00345FEB /* EditBloodPressureReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBloodPressureReadingView.swift; sourceTree = "<group>"; };
 		99AC87F32BCF380500EF6DFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99AF23662BCC5C5A002CEBE3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		99AF23682BCC7483002CEBE3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -103,7 +115,7 @@
 		99B0C5E42BD48686003DBFCE /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
 		99B0C5E62BD486AC003DBFCE /* PharmaciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesView.swift; sourceTree = "<group>"; };
 		99B0C5E82BD486D9003DBFCE /* PhysiciansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysiciansView.swift; sourceTree = "<group>"; };
-		99B0C5EA2BD486EB003DBFCE /* BloodPresureLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPresureLogView.swift; sourceTree = "<group>"; };
+		99B0C5EA2BD486EB003DBFCE /* BloodPressureReadingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureReadingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,7 +282,10 @@
 		99A9CE7B2BD8888700345FEB /* BloodSugar */ = {
 			isa = PBXGroup;
 			children = (
-				99A9CE6A2BD5B49200345FEB /* BloodSugarLogView.swift */,
+				99A9CE6A2BD5B49200345FEB /* BloodSugarReadingsView.swift */,
+				99A9CEA02BDEB53300345FEB /* BloodSugarReadingDetails.swift */,
+				99A9CEA22BDEB55500345FEB /* NewBloodSugarReadingView.swift */,
+				99A9CEA42BDEB56700345FEB /* EditBloodSugarReadingView.swift */,
 			);
 			path = BloodSugar;
 			sourceTree = "<group>";
@@ -278,7 +293,10 @@
 		99A9CE7C2BD8889400345FEB /* BloodPressure */ = {
 			isa = PBXGroup;
 			children = (
-				99B0C5EA2BD486EB003DBFCE /* BloodPresureLogView.swift */,
+				99B0C5EA2BD486EB003DBFCE /* BloodPressureReadingsView.swift */,
+				99A9CEA62BDEB57D00345FEB /* BloodPressureReadingDetails.swift */,
+				99A9CEA82BDEB58F00345FEB /* NewBloodPressureReadingView.swift */,
+				99A9CEAA2BDEB59E00345FEB /* EditBloodPressureReadingView.swift */,
 			);
 			path = BloodPressure;
 			sourceTree = "<group>";
@@ -424,23 +442,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A9CE932BDE03F600345FEB /* PharmacyDetails.swift in Sources */,
+				99A9CEA32BDEB55500345FEB /* NewBloodSugarReadingView.swift in Sources */,
+				99A9CEA12BDEB53400345FEB /* BloodSugarReadingDetails.swift in Sources */,
 				99A9CE992BDEA89D00345FEB /* BloodPressureModel.swift in Sources */,
 				99A9CE9F2BDEA8E500345FEB /* BloodSugarViewModel.swift in Sources */,
 				99A9CE6F2BD5B97200345FEB /* MedicationViewModel.swift in Sources */,
 				99A9CE952BDE040400345FEB /* NewPharmacyView.swift in Sources */,
+				99A9CEA52BDEB56700345FEB /* EditBloodSugarReadingView.swift in Sources */,
 				99AF23692BCC7483002CEBE3 /* ListView.swift in Sources */,
+				99A9CEAB2BDEB59E00345FEB /* EditBloodPressureReadingView.swift in Sources */,
 				99A9CE732BD7449600345FEB /* MedicationDetails.swift in Sources */,
 				99A9CE8F2BDDF06300345FEB /* NewPhysicianView.swift in Sources */,
 				99A9CE712BD5BC7500345FEB /* MedicationModel.swift in Sources */,
 				99A9CE802BDD9D1E00345FEB /* NewMedicationView.swift in Sources */,
 				9919684A2BC1F4B800DFA535 /* ContentView.swift in Sources */,
+				99A9CEA92BDEB58F00345FEB /* NewBloodPressureReadingView.swift in Sources */,
 				99AF23672BCC5C5A002CEBE3 /* AuthManager.swift in Sources */,
 				99A9CE862BDDEF2F00345FEB /* PharmaciesViewModel.swift in Sources */,
 				99A9CE882BDDEF5300345FEB /* PhysicianModel.swift in Sources */,
 				99A9CE822BDDA01B00345FEB /* EditMedicationView.swift in Sources */,
+				99A9CEA72BDEB57D00345FEB /* BloodPressureReadingDetails.swift in Sources */,
 				99A9CE8A2BDDEF6400345FEB /* PharmacyModel.swift in Sources */,
-				99A9CE6B2BD5B49200345FEB /* BloodSugarLogView.swift in Sources */,
-				99B0C5EB2BD486EB003DBFCE /* BloodPresureLogView.swift in Sources */,
+				99A9CE6B2BD5B49200345FEB /* BloodSugarReadingsView.swift in Sources */,
+				99B0C5EB2BD486EB003DBFCE /* BloodPressureReadingsView.swift in Sources */,
 				99A9CE9B2BDEA8BF00345FEB /* BloodSugarModel.swift in Sources */,
 				99B0C5E52BD48686003DBFCE /* MedicationsView.swift in Sources */,
 				99A9CE912BDDF07300345FEB /* EditPhysicianView.swift in Sources */,
@@ -621,8 +645,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,8 +673,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

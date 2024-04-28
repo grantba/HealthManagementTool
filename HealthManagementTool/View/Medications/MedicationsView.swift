@@ -26,13 +26,13 @@ struct MedicationsView: View {
                         Text(medication.name)
                             .font(.system(size: 18, weight: .semibold))
                             .foregroundColor(.blue)
-                            .underline()
+                            //.underline()
                     }
                         NavigationLink {
                             EditMedicationView(medication: $medication)
                         }
                     label: {
-                        Label("Edit \(medication.name) details", systemImage: "square.and.pencil")
+                        Label("Edit", systemImage: "square.and.pencil")
                     }
                     .font(.system(size: 16, weight: .regular))
                     .padding([.leading], 30)

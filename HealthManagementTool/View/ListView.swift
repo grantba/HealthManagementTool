@@ -43,7 +43,7 @@ struct ListView: View {
                         .foregroundColor(.blue).font(.system(size: 20, weight: .semibold))
                         .padding([.leading, .trailing], 50)
                 }
-                NavigationLink(destination: BloodPresureLogView()) {
+                NavigationLink(destination: BloodPressureReadingsView()) {
                     HStack {
                         Image(systemName: "stethoscope")
                         Text("Blood Pressure Log")
@@ -52,7 +52,7 @@ struct ListView: View {
                         .foregroundColor(.blue).font(.system(size: 20, weight: .semibold))
                         .padding([.leading, .trailing], 50)
                 }
-                NavigationLink(destination: BloodSugarLogView()) {
+                NavigationLink(destination: BloodSugarReadingsView()) {
                     HStack {
                         Image(systemName: "heart.text.square")
                         Text("Blood Sugar Log")

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+
+struct BloodSugarModel : Codable, Identifiable {
+    @DocumentID var id: String?
+    var date: String
+    var time: String
+    var bloodSugarLevel: String
+    var meds: String
+    var carbs: String
+    var notes: String
+    var userId: String
+}

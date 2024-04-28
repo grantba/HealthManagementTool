@@ -23,13 +23,13 @@ struct PhysiciansView: View {
                         Text("\(physician.lastName), \(physician.firstName)")
                             .font(.system(size: 18, weight: .semibold))
                             .foregroundColor(.blue)
-                            .underline()
+                            //.underline()
                     }
                         NavigationLink {
                             EditPhysicianView(physician: $physician)
                         }
                     label: {
-                        Label("Edit \(physician.lastName), \(physician.firstName) Details", systemImage: "square.and.pencil")
+                        Label("Edit", systemImage: "square.and.pencil")
                     }
                     .font(.system(size: 16, weight: .regular))
                     .padding([.leading], 30)
