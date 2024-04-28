@@ -1,5 +1,5 @@
 //
-//  AddMedicationView.swift
+//  AddPhysicianView.swift
 //  HealthManagementTool
 //
 //  Created by Blaire Grant on 4/20/24.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct AddMedicationView: View {
+struct BloodPresureLogView: View {
     var body: some View {
-        Text("Add Medication")
+        Text("Blood Pressure Log")
     }
 }
 
 #Preview {
-    AddMedicationView()
+    BloodPresureLogView()
 }
