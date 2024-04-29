@@ -19,7 +19,7 @@ struct PageLoadView: View {
             VStack(spacing: 20) {
                 Image("HealthcareImage")
                     .resizable()
-                    .frame(width: 300, height: 150)
+                    .frame(width: 275, height: 150)
                     .cornerRadius(10)
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
